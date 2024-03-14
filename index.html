@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Halaman Beranda</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Kelompok 4">
+        <meta name="nim" content="233307003/015/024">
+        <link rel="icon" type="image/png" href="gambar/icon.png" sizes="16x16"/>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            header{
+                background-color: #666;
+                padding: 30px;
+                text-align: center;
+                font-size: 35px;
+                color: white;
+            }
+            nav{
+                float: left;
+                width: 30%;
+                height: 300px;
+                background: #ccc;
+                padding: 20px;
+            }
+            nav ul{
+                list-style-type: none;
+                padding: 0;
+            }
+            article{
+                float: left;
+                padding: 20px;
+                width: 70%;
+                background-color: #f1f1f1;
+                height: 300px;
+            }
+            section::after{
+                content: "";
+                display: table;
+                clear: both;
+            }
+            footer{
+                background-color: #777;
+                padding: 10px;
+                text-align: center;
+                color: white;
+            }
+            @media (max-width:600px){
+                nav,article{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h2>Kelompok 4</h2>
+        </header>
+        <section>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gambar.html">Gambar</a></li>
+                    <li><a href="event.html">Event</a></li>
+                    <li><a href="audio.html">Audio</a></li>
+                    <li><a href="video.html">Video</a></li>
+                    <li><a href="svg.html">SVG</a></li>
+                    <li><a href="canvas.html">Canvas</a></li>
+                </ul>
+            </nav>
+            <article>
+                <h1>Web Kelompok 4</h1>
+                <p>sebelum membuat CSS, tampilan web masih polos. dengan modifikasi demikian membuat tampilan web lebih bervariasi. 
+                <b>CSS *{...}</b> digunakan untuk mengatur model kotak CSS untuk semmua elemen dalam halaman web. 
+                <b>CSS header{...}</b> digunakan untuk mengatur area judul/header. 
+                <b>CSS nav{..}</b> dan <b>nav ul{...}</b> digunakan untuk mengatur area navigasi dan model list navigasi. 
+                <b>CSS article{...}</b> digunakan untuk mengatur area articel.
+                <b>CSS section::after{...}</b> digunakan untuk mengatasi masalah float di dalam elemen HTML. 
+                <b>CSS @media (max-width: 600px){...}</b> digunakan untuk menentukan gaya tertentu yang akan diterapkan pada halaman web 
+                berdasarkan karakteristik perangkat yang sedang digunakan oleh pengguna
+                </p>
+            </article>
+        </section>
+        <footer>
+            <i>Copyright@amrizalNakharir_233307003_2023</i><br>
+            <i>Copyright@HanifahAlyaN_233307015_2023</i><br>
+            <i>Copyright@RanggaDhiyaF_233307024_2023</i>
+        </footer>
+    </body>
+</html>
+    
