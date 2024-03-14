@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Halaman Beranda</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Kelompok 4">
+    <meta name="nim" content="233307003/015/024">
+    <link rel="icon" type="image/png" href="gambar/icon.png" sizes="16x16"/>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #666;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+        nav {
+            float: left;
+            width: 30%;
+            height: 300px;
+            background: #ccc;
+            padding: 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #f1f1f1;
+            height: auto;
+        }
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+        @media (max-width:600px) {
+            nav,article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h2>Kelompok 4</h2>
+</header>
+<section>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gambar.html">Gambar</a></li>
+            <li><a href="event.html">Event</a></li>
+            <li><a href="audio.html">Audio</a></li>
+            <li><a href="video.html">Video</a></li>
+            <li><a href="svg.html">SVG</a></li>
+            <li><a href="canvas.html">Canvas</a></li>
+            <li><a href="pendaftaran.html">Pendaftaran</a></li>
+        </ul>
+    </nav>
+    <article>
+        <h1><b>Form Pendaftaran Pertemuan</b></h1>
+        <form>
+            <fieldset>
+                <legend>Informasi Pribadi</legend>
+            <label for="Nama">Nama</label><br>
+            <input type="text" id="Nama" name="Nama" required><br><br>
+            <label for="no_telepon">No. Telepon (Format: XXXX-XXXXXX):</label><br>
+            <input type="text" id="no_telepon" name="no_telepon" pattern="[0-9]{4}-[0-9]{6}" required><br><br>
+
+            <label for="email">Alamat Email (Format: nama@domain.com):</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="tgl_lahir">Tanggal Lahir (Format: YYYY-MM-DD):</label><br>
+            <input type="date" id="tgl_lahir" name="tgl_lahir" min="1987-01-01" max="1993-01-01" required><br><br>
+        </fieldset>
+        <fieldset>
+            <legend>Permintaan pertemuan</legend>
+            <label for="Tujuan Pertemuan">Tujuan Pertemuan</label><br>
+            <input type="text" id="Tujuan Pertemuan" name="Tujuan Pertemuan" ><br><br>
+
+            <label for="tingkat_kepentingan">Tingkat Kepentingan (0-10):</label><br>
+            <input type="number" id="tingkat_kepentingan" name="tingkat_kepentingan" min="0" max="10" required><br><br>
+
+            <label for="tanggal">Tanggal (Hari ini dan setelahnya):</label><br>
+            <input type="date" id="tanggal" name="tanggal" min="2024-03-14" required><br><br>
+
+            <label for="jam">Jam (17.00 - 21.00 WIB):</label><br>
+            <input type="time" id="jam" name="jam" min="17:00" max="21:00" required><br><br>
+        </fieldset>
+
+            <input type="submit" value="Submit">
+
+        
+        </form>
+    </article>
+</section>
+<footer>
+    <i>Copyright@amrizalNakharir_233307003_2023</i><br>
+    <i>Copyright@HanifahAlyaN_233307015_2023</i><br>
+    <i>Copyright@RanggaDhiyaF_233307024_2023</i>
+</footer>
+
+</body>
+</html>
