@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Rangga</title>
+    <style>
+        div p{
+            color: red;
+        }
+        div > p{
+            background-color: yellow;
+        }
+        div + p{
+            background-color: darkgray;
+        }
+        div ~p{
+            color: cyan;
+        }
+        div + p{
+            background-color: darkgray;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>This is a first paragraph.....</p>
+        <p>This is a second paragraph.....</p>
+    </div>
+    <p>This is a third paragraph.....</p>
+    <p>This is a fourth paragraph.....</p>
+</body>
+</html>
